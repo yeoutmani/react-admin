@@ -1,0 +1,16 @@
+{
+    "colorize.languages": [
+        "javascript",
+        "javascriptreact",
+        "json",
+        "css",
+        "sass",
+        "scss",
+        "less",
+        "postcss",
+        "sss",
+        "stylus",
+        "xml",
+        "svg"
+    ]
+}
