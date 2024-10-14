@@ -71,24 +71,29 @@ const Calendar = () => {
                                     primary={event.title}
                                     secondary={
                                         <Typography>
-                                            {formatDate(event.startStr, { 
+                                            {formatDate(event.startStr, {
                                                 year: "numeric",
                                                 month: "short",
                                                 day: "numeric",
                                             })}
                                         </Typography>
                                     }
-                                >
-
-                                </ListItemText>
+                                />
                             </ListItem>
                         ))}
                     </List>
                 </Box>
+
+                {/* CALENDAR */}
                 <Box flex="1 1 100%" ml="15px">
                     <FullCalendar
-                        height="75v"
-                        plugins={[dayGridPlugin, timeGridPlugin,interactionPlugin ,listPlugin]}
+                        height="75vh"
+                        plugins={[
+                            dayGridPlugin,
+                            timeGridPlugin,
+                            interactionPlugin,
+                            listPlugin,
+                        ]}
                         headerToolbar={{
                             left: "prev,next today",
                             center: "title",
@@ -106,7 +111,7 @@ const Calendar = () => {
                             {
                                 id: "12315",
                                 title: "All-day event",
-                                date: "2024-10-13",
+                                date: "2024-10-15",
                             },
                             {
                                 id: "5123",
@@ -114,8 +119,7 @@ const Calendar = () => {
                                 date: "2024-10-14",
                             },
                         ]}
-                    ></FullCalendar>
-
+                    />
                 </Box>
             </Box>
         </Box>
